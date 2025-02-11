@@ -32,7 +32,6 @@ def evaluate_model(
     test_target = test[target].values
 
     print_metrics(test_predictions, test_target)
-    logging.info(test_predictions)
 
 
 def print_metrics(predictions: np.ndarray, target: np.ndarray) -> None:
