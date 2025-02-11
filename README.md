@@ -1,5 +1,7 @@
 # MLE Challenge, Property-Friends Real State case
 
+> **_NOTE:_**  My commit history is clearly unnatural. This happened because I did the challenge in another Github account, and only at the end discovered that my account was flagged for a reason unknown to me. Since Gitub Support may take weeks to answers me, I decided it was better do replicate my repo in this account (forking or changing ownership of the repo was not an option for a flagged account)
+
 ## Overview
 This project is the deliverable for the Property-Friends Real Estate case challenge. It includes a machine learning training pipeline with data preprocessing, model training and evaluation steps. It also includes an API for making predictions.
 
