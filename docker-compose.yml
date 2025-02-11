@@ -1,0 +1,22 @@
+services:
+  train:
+    build: .
+    environment:
+      - RUN_MODE=train
+      - PYTHONPATH=/bain-desafio-mle
+    volumes:
+      - ./src:/bain-desafio-mle/src
+      - ./data:/bain-desafio-mle/data
+    command: ["python", "src/main.py"]
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - RUN_MODE=api
+      - PYTHONPATH=/bain-desafio-mle/src
+    volumes:
+      - ./src:/bain-desafio-mle/src
+      - ./data:/bain-desafio-mle/data
+    command: ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000"]
