@@ -59,6 +59,8 @@ This project is the deliverable for the Property-Friends Real Estate case challe
 
 ## Usage
 > **_NOTE:_**  The steps below should be run inside the cloned repository folder "mle-challenge". See Installation.
+
+> Since the data files are not on GitHub, make sure to add the train and test files before running the Training pipeline. Because of the lack of data, the Training pipeline must be ran before the API. 
 ### Training
 1. Run the following command:
     ```bash
