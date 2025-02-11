@@ -6,12 +6,19 @@ class PathConfig:
     PREPROCESSOR_PATH = 'data/02_processed/preprocessor.joblib'
     MODEL_PATH = 'data/03_model/model.joblib'
 
+
 class ModelParams:
     LEARNING_RATE = 0.01
     N_ESTIMATORS = 300
     MAX_DEPTH = 5
     LOSS = "absolute_error"
 
+
+class APIConfig:
+    API_KEY = 'ABCD-1234-EFGH-5678'
+
+
 class Config:
     PATHS = PathConfig
     MODEL_PARAMS = ModelParams
+    API = APIConfig
